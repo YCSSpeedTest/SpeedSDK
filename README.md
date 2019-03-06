@@ -21,14 +21,14 @@ self.apiValue = [[SpeedTestApi alloc]initWithDelegate:self];
 
 ```obj
 - (void)speedTestDisConnectedWithError:(NSString *)error {
-NSLog(@"异常问题:  %@", error);
+    NSLog(@"异常问题:  %@", error);
 }
 - (void)speedTestShowWithState:(enum SpeedState)state isAverage:(BOOL)isAverage speedValue:(CGFloat)speedValue {
-NSString *value2;
-if (isAverage) {
-value2 = @"平均网速: ";
-} else {
-value2 = @"瞬时网速: ";
-}
+    NSString *value2;
+    if (isAverage) {
+        value2 = @"平均网速: ";
+    } else {
+        value2 = @"瞬时网速: ";
+    }
 }
 ```
